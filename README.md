@@ -10,7 +10,7 @@ A responsive task management web application built with HTML, CSS, and JavaScrip
 
 ### Mobile
 
-<img src="mobileUI.jpeg" alt="To-Do List Application - Mobile" width="250">
+<img src="mobileUI.jpeg" alt="To-Do List Application - Mobile" height="250" width="250">
 
 ## Features
 
