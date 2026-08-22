@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="app-header">
+            <div>
+                <h1>To-Do List</h1>
+                <p>Organise your tasks</p>
+            </div>
+            <button id="themeToggle" class="theme-btn" type="button">Dark Mode</button>
+        </header>
+        <!--task-->
+        <section class="task-form-section">
+            <form id="taskForm">
+                <div class="input-row">
+                    <input type="text" id="taskInput" placeholder="Enter a new task" maxlength="100" autocomplete="off">
+                    <button type="submit" class="add-btn">Add Task</button>
+                </div>
+                <div class="extra-options">
+                    <div class="form-group">
+                        <label for="categoryInput">Categoty</label>
+                        <select id="categoryInput">
+                            <option value="Personal">Personal</option>
+                            <option value="Study">Study</option>
+                            <option value="Work">Work</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <label for="priorityInput">Priority</label>
+                    <select id="priorityInput">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dueDateInput">Due Date</label>
+                    <input type="date" id="dueDateInput">
+                </div>
+                </div>
+            </form>
+            <p id="errorMessage" class="error-message"></p>
+        </section>
+        <!--search and filter the task-->
+        <section class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search Task" autocomplete="off">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" type="button">All</button>
+                <button class="filter-btn active" data-filter="pending" type="button">Pending</button>
+                <button class="filter-btn active" data-filter="completed" type="button">Completed</button>
+            </div>
+        </section>
+        <!--counting total and pending tasks-->
+        <section class="stats">
+            <div class="stat-card">
+                <span id="totalTasks">0</span>
+                <p>Total Tasks</p>
+            </div>
+            <div class="stat-card">
+                <span id="pendingTasks">0</span>
+                <p>Pending</p>
+            </div>
+            <div class="stat-card">
+                <span id="completedTasks">0</span>
+                <p>Completed</p>
+            </div>
+        </section>
+        <section>
+            <div id="taskList" class="task-list"></div>
+            <div id="emptyMessage" class="empty-message">No tasks found.</div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
