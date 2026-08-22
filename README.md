@@ -66,7 +66,7 @@ To-Do-List/
 │
 ├── index.html
 ├── style.css
-├── todo.js
+├── index.js
 ├── todoUI-pc.png
 ├── mobileUI.jpeg
 └── README.md
