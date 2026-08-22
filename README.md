@@ -6,11 +6,11 @@ A responsive task management web application built with HTML, CSS, and JavaScrip
 
 ### Desktop
 
-![To-Do List Application](todoUI-pc.png)
+<img src="todoUI-pc.png" alt="To-Do List Application" width="600">
 
 ### Mobile
 
-![To-Do List Application - Mobile](mobileUI.jpeg)
+<img src="mobileUI.jpeg" alt="To-Do List Application - Mobile" width="250">
 
 ## Features
 
